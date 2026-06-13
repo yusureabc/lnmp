@@ -77,6 +77,8 @@ elif [ "${PHPSelect}" = "13" ]; then
     Php_Ver='php-8.2.23'
 elif [ "${PHPSelect}" = "14" ]; then
     Php_Ver='php-8.3.11'
+elif [ "${PHPSelect}" = "15" ]; then
+    Php_Ver='php-8.5.7'
 fi
 if [[ "${PHPSelect}" =~ ^[123]$ ]]; then
     PhpMyAdmin_Ver='phpMyAdmin-4.0.10.20-all-languages'
@@ -100,7 +102,7 @@ ImageMagick_Ver='ImageMagick-7.1.1-8'
 Imagick_Ver='imagick-3.7.0'
 ZendOpcache_Ver='zendopcache-7.0.5'
 Redis_Stable_Ver='redis-7.0.11'
-PHPRedis_Ver='redis-5.3.7'
+PHPRedis_Ver='redis-6.3.0'
 Memcached_Ver='memcached-1.6.15'
 Libmemcached_Ver='libmemcached-1.0.18'
 PHPMemcached_Ver='memcached-2.2.0'
