@@ -30,7 +30,7 @@ Install_Only_Nginx()
     echo "+-----------------------------------------------------------------------+"
     echo "|                     A tool to only install Nginx.                     |"
     echo "+-----------------------------------------------------------------------+"
-    echo "|           For more information please visit https://lnmp.org          |"
+    echo "|           For more information please visit https://lnmp.me           |"
     echo "+-----------------------------------------------------------------------+"
     Press_Install
     Echo_Blue "Install dependent packages..."
@@ -264,7 +264,7 @@ Install_Only_Database()
     echo "+-----------------------------------------------------------------------+"
     echo "|               A tool to install MySQL/MariaDB for LNMP                |"
     echo "+-----------------------------------------------------------------------+"
-    echo "|           For more information please visit https://lnmp.org          |"
+    echo "|           For more information please visit https://lnmp.me           |"
     echo "+-----------------------------------------------------------------------+"
 
     Get_Dist_Name
