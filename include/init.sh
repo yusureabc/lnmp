@@ -379,12 +379,14 @@ CentOS_Dependent()
         if [[ ! -n "$crb_source_check" ]]; then
             echo "Add crb source..."
             cat > /etc/yum.repos.d/centos-crb.repo << EOF
-[CRB]
-name=CentOS-\$releasever - CRB - mirrors.ustc.edu.cn
-#failovermethod=priority
-baseurl=https://mirrors.ustc.edu.cn/centos-stream/\$stream/CRB/\$basearch/os/
-gpgcheck=1
-gpgkey=https://mirrors.ustc.edu.cn/centos-stream/RPM-GPG-KEY-CentOS-Official
+[crb]
+name=CentOS Stream \$releasever - CRB
+baseurl=https://mirrors.ustc.edu.cn/centos-stream/9-stream/CRB/\$basearch/os/
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=1
 EOF
         fi
     fi
