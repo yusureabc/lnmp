@@ -26,7 +26,7 @@ LNMP一键安装包是一个用Linux Shell编写的可以为CentOS/RHEL/Fedora/D
 
 安装前确认已经安装git命令，如提示git: command not found ，使用`yum install git` 或 `apt-get install git` 命令安装。
 为防止掉线等情况，建议使用screen，可以先执行：screen -S lnmp 命令后，再执行LNMP安装命令：
-`git clone https://github.com/aircross/lnmp.git && cd lnmp && ./install.sh {lnmp|lnmpa|lamp}`
+`git clone https://github.com/yusureabc/lnmp.git && cd lnmp && ./install.sh {lnmp|lnmpa|lamp}`
 或者从release里下载lnmp-lua-zend.tar.gz
 `tar -xzf lnmp-lua-zend.tar.gz && cd lnmp && ./install.sh {lnmp|lnmpa|lamp}`
 
@@ -210,7 +210,3 @@ MariaDB 10.11 | 11 | PHP 7.4 | 10 | | | |
 |Enable_PHP_Bz2|是否添加PHP bz2模块|默认n，更改为y即安装|
 |Enable_PHP_Sodium|是否添加PHP sodium模块，PHP 7.2以下不支持lnmp.conf开启安装|默认n，更改为y即安装|
 |Enable_PHP_Imap|是否添加PHP imap模块|默认n，更改为y即安装|
-
-## 技术支持
-
-**只看不问问题&技术论坛：<https://bbs.lnmp.com/forum-25-1.html>**
